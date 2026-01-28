@@ -6,6 +6,7 @@ services:
     restart: unless-stopped
     volumes:
     - ./jupyter-data/:/home/worker/data
-
+    environment:
+     JUPYTER_TOKEN: "JupyterInDocker"
     ports:
     - 127.0.0.1:8888:8888
