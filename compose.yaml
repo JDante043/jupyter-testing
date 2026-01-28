@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    image: dannb/jupyter-testing
+    container_name: jupyter-testing
+    user: worker
+    restart: unless-stopped
+    volumes:
+    - ./jupyter-data/:/home/worker/data
+
+    ports:
+    - 127.0.0.1:8888:8888
