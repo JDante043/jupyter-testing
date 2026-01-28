@@ -1,9 +1,11 @@
 # Purpose
 The purpose of this docker container is to explain and demonstrate the basics of containerization.
+
 The dockerfile uses the official python docker, which will modify it to install Anaconda3 and start a jupyter server. This should be used to explain what dockerfiles are
+
 The docker compose file will mount the jupyter-data folder to the container. This should be used to explain what compose files are
 
-You do not need to build the dockerfile, it is already available in hub.docker.com under the repository `dannb/jupyter-testing`` and already referenced in the compose file.
+You do not need to build the dockerfile, it is already available in hub.docker.com under the repository `dannb/jupyter-testing` and already referenced in the compose file.
 
 # Pre-requisites
 - A docker installation is required, make sure the docker service is started
