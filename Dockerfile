@@ -11,7 +11,7 @@ rm Anaconda3-2025.12-2-Linux-x86_64.sh
 
 ENV PATH="$PATH:/opt/conda/bin"
 
-RUN conda config --set plugins.auto_accept_tos yes && conda create -n testing python=3.13.11 jupyter pandas scikit-learn -y
+RUN conda config --set plugins.auto_accept_tos yes && conda create -n testing python=3.13.11 jupyter pandas scikit-learn seaborn matplotlib -y
 
 EXPOSE 8888
 
